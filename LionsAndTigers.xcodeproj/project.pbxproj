@@ -13,6 +13,7 @@
 		843BB51719DA117500B57ED2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843BB51619DA117500B57ED2 /* Images.xcassets */; };
 		843BB51A19DA117500B57ED2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843BB51819DA117500B57ED2 /* LaunchScreen.xib */; };
 		843BB52619DA117500B57ED2 /* LionsAndTigersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB52519DA117500B57ED2 /* LionsAndTigersTests.swift */; };
+		843BB53119DA159000B57ED2 /* Tiger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB53019DA159000B57ED2 /* Tiger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		843BB51F19DA117500B57ED2 /* LionsAndTigersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LionsAndTigersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		843BB52419DA117500B57ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843BB52519DA117500B57ED2 /* LionsAndTigersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LionsAndTigersTests.swift; sourceTree = "<group>"; };
+		843BB53019DA159000B57ED2 /* Tiger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tiger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				843BB50F19DA117500B57ED2 /* AppDelegate.swift */,
 				843BB51119DA117500B57ED2 /* ViewController.swift */,
+				843BB52F19DA155500B57ED2 /* Models */,
 				843BB51319DA117500B57ED2 /* Main.storyboard */,
 				843BB51619DA117500B57ED2 /* Images.xcassets */,
 				843BB51819DA117500B57ED2 /* LaunchScreen.xib */,
@@ -110,6 +113,14 @@
 				843BB52419DA117500B57ED2 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		843BB52F19DA155500B57ED2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				843BB53019DA159000B57ED2 /* Tiger.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				843BB51219DA117500B57ED2 /* ViewController.swift in Sources */,
+				843BB53119DA159000B57ED2 /* Tiger.swift in Sources */,
 				843BB51019DA117500B57ED2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
