@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     
     var myTigers:[Tiger] = []
     var lions:[Lion] = []
+    var lionCubs:[LionCub] = []
     
     var currentIndex = 0
     
@@ -95,6 +96,13 @@ class ViewController: UIViewController {
         
         println("The lion's age is \(lion.age) and the lion's name is \(lion.name) and the lion's subspecies is \(lion.subspecies)")
         
+        lion.roar()
+        lion.changeToAlphaMale()
+        
+        if lion.isAlphaMale == true {
+            println("The lion is now an alpha")
+        }
+        
         var lioness = Lion()
         lioness.age = 3
         lioness.isAlphaMale = false
@@ -102,15 +110,31 @@ class ViewController: UIViewController {
         lioness.name = "Sarabi"
         lioness.subspecies = "Barbary"
         
-        self.lions += [lion, lioness]
-        
-        lion.roar()
         lioness.roar()
-        lion.changeToAlphaMale()
         
-        if lion.isAlphaMale == true {
-            println("The lion is now an alpha")
-        }
+        self.lions += [lion, lioness]
+
+        var lionCub = LionCub()
+        lionCub.age = 1
+        lionCub.name = "Simba"
+        lionCub.image = UIImage(named:"LionCub1.jpg")
+        lionCub.subspecies = "Masai"
+        lionCub.isMale = true
+        
+        println("Lion cub should roar after this statement")
+        lionCub.roar()
+        lionCub.rubLionCubsBelly()
+        
+        var femaleLionCub = LionCub()
+        
+        femaleLionCub.age = 1
+        femaleLionCub.name = "Nala"
+        femaleLionCub.image = UIImage(named: "LionCub2.jpeg")
+        femaleLionCub.subspecies = "Transvaal"
+        femaleLionCub.isMale = false
+        
+        self.lionCubs += [lionCub, femaleLionCub]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -120,12 +144,15 @@ class ViewController: UIViewController {
     
     func updateAnimal (){
         switch currentAnimal {
-            case ("Tiger", _):
-                let randomIndex = Int(arc4random_uniform(UInt32(lions.count)))
-                currentAnimal = ("Lion", randomIndex)
-            default:
-                let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
-                currentAnimal = ("Tiger", randomIndex)
+        case ("Tiger", _):
+            let randomIndex = Int(arc4random_uniform(UInt32(lions.count)))
+            currentAnimal = ("Lion", randomIndex)
+        case ("Lion", _):
+            let randomIndex = Int(arc4random_uniform(UInt32(lionCubs.count)))
+            currentAnimal = ("LionCub", randomIndex)
+        default:
+            let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+            currentAnimal = ("Tiger", randomIndex)
         }
     }
 
@@ -148,6 +175,15 @@ class ViewController: UIViewController {
                 self.ageLabel.text = "\(lion.age)"
                 self.nameLabel.text = lion.name
                 self.randomFactLabel.text = lion.randomFact()
+            }
+            else if self.currentAnimal.species == "LionCub" {
+                let lionCub = self.lionCubs[self.currentAnimal.index]
+                self.myImageView.image = lionCub.image
+                self.breedLabel.text = lionCub.subspecies
+                self.ageLabel.text = "\(lionCub.age)"
+                self.nameLabel.text = lionCub.name
+                self.randomFactLabel.text = lionCub.randomFact()
+                
             }
             
             }, completion: {(finished: Bool) -> () in

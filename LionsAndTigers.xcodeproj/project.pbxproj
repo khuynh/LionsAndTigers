@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8439407219DE2B6E0029BCF4 /* LionCub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8439407119DE2B6E0029BCF4 /* LionCub.swift */; };
 		843BB51019DA117500B57ED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB50F19DA117500B57ED2 /* AppDelegate.swift */; };
 		843BB51219DA117500B57ED2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB51119DA117500B57ED2 /* ViewController.swift */; };
 		843BB51519DA117500B57ED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843BB51319DA117500B57ED2 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8439407119DE2B6E0029BCF4 /* LionCub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LionCub.swift; sourceTree = "<group>"; };
 		843BB50A19DA117500B57ED2 /* LionsAndTigers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LionsAndTigers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843BB50E19DA117500B57ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843BB50F19DA117500B57ED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				843BB53019DA159000B57ED2 /* Tiger.swift */,
 				843BB58F19DE1E8A00B57ED2 /* Lion.swift */,
+				8439407119DE2B6E0029BCF4 /* LionCub.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				843BB51219DA117500B57ED2 /* ViewController.swift in Sources */,
 				843BB53119DA159000B57ED2 /* Tiger.swift in Sources */,
 				843BB51019DA117500B57ED2 /* AppDelegate.swift in Sources */,
+				8439407219DE2B6E0029BCF4 /* LionCub.swift in Sources */,
 				843BB59019DE1E8A00B57ED2 /* Lion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +465,7 @@
 				843BB52B19DA117500B57ED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		843BB52C19DA117500B57ED2 /* Build configuration list for PBXNativeTarget "LionsAndTigersTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +474,7 @@
 				843BB52E19DA117500B57ED2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
