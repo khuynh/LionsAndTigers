@@ -22,6 +22,7 @@
 		843BB55019DA18BF00B57ED2 /* Lioness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 843BB54819DA18BF00B57ED2 /* Lioness.jpeg */; };
 		843BB55119DA18BF00B57ED2 /* MalayanTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 843BB54919DA18BF00B57ED2 /* MalayanTiger.jpg */; };
 		843BB55219DA18BF00B57ED2 /* SiberianTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 843BB54A19DA18BF00B57ED2 /* SiberianTiger.jpg */; };
+		843BB59019DE1E8A00B57ED2 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843BB58F19DE1E8A00B57ED2 /* Lion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		843BB54819DA18BF00B57ED2 /* Lioness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lioness.jpeg; sourceTree = "<group>"; };
 		843BB54919DA18BF00B57ED2 /* MalayanTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MalayanTiger.jpg; sourceTree = "<group>"; };
 		843BB54A19DA18BF00B57ED2 /* SiberianTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SiberianTiger.jpg; sourceTree = "<group>"; };
+		843BB58F19DE1E8A00B57ED2 /* Lion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				843BB53019DA159000B57ED2 /* Tiger.swift */,
+				843BB58F19DE1E8A00B57ED2 /* Lion.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				843BB51219DA117500B57ED2 /* ViewController.swift in Sources */,
 				843BB53119DA159000B57ED2 /* Tiger.swift in Sources */,
 				843BB51019DA117500B57ED2 /* AppDelegate.swift in Sources */,
+				843BB59019DE1E8A00B57ED2 /* Lion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
